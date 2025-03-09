@@ -1,7 +1,7 @@
 name: My workflow
 on: 
   - push
-  - workflow_dispacth
+  - workflow_dispatch
 
 job:
   build:
