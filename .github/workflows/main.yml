@@ -1,7 +1,7 @@
 name: My workflow
 on: 
   - push
-  - workflowdispacth
+  - workflow_dispacth
 
 job:
   build:
