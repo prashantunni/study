@@ -11,5 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: |
-       echo "Hello Wolrd"
+    - uses: actions/checkout@v4.2.2
+      name: Checkout
+    - uses: nyurik/action-setup-nginx@v1.1
+      name: Installing nginx
+    - runs: |
+      cp index.html /usr/share/nginx/html
+    - runs: |
+      service nginx restart
