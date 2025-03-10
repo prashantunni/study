@@ -18,4 +18,6 @@ jobs:
     - run: |
         cp index.html /usr/share/nginx/html
     - run: |
-        service nginx restart
+        curl http://localhost:8080/index.html
+    - run: |
+        sudo service nginx restart
