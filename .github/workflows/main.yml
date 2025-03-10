@@ -1,9 +1,9 @@
 name: My workflow
 on: 
-  push
-    branches
+  push:
+    branches:
     - main
-  workflow_dispatch
+  workflow_dispatch:
 
 jobs:
   build:
