@@ -1,7 +1,9 @@
 name: My workflow
 on: 
-  - push
-  - workflow_dispatch
+  push
+    branches
+    - main
+  workflow_dispatch
 
 jobs:
   build:
@@ -9,4 +11,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      run: echo "Hello Wolrd"
+      run: |
+       echo "Hello Wolrd"
