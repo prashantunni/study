@@ -3,7 +3,7 @@ on:
   - push
   - workflow_dispatch
 
-job:
+jobs:
   build:
     name: Hellow World Action
     runs-on: ubuntu-latest
