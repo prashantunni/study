@@ -15,7 +15,7 @@ jobs:
       name: Checkout
     - uses: nyurik/action-setup-nginx@v1.1
       name: Installing nginx
-    - runs: |
-      cp index.html /usr/share/nginx/html
-    - runs: |
-      service nginx restart
+    - run: |
+        cp index.html /usr/share/nginx/html
+    - run: |
+        service nginx restart
